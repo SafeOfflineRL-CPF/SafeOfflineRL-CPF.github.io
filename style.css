@@ -156,3 +156,46 @@ p {
   border-radius: 12px;
   box-shadow: 0 18px 40px rgba(15, 20, 29, 0.18);
 }
+
+/* =============== Section Blocks (Abstract / Video) =============== */
+
+.section-block {
+  background: #f6f8fc;          /* 연한 배경 */
+  border: 1px solid #eef1f7;    /* 은은한 테두리 */
+  border-radius: 16px;
+  padding: 34px 28px;
+  margin-top: 46px;
+}
+
+/* 가운데 제목 + underline */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  border: none; /* 기존 h2 border-bottom 무력화 */
+  position: relative;
+}
+
+/* 보라색 짧은 바 (레퍼런스 느낌) */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 3px;
+  background: #b05cff; /* 원하면 색 바꿔도 됨 */
+  border-radius: 999px;
+  margin: 12px auto 0;
+}
+
+.section-block p {
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-block .video-container {
+  max-width: 100%;
+  margin-top: 22px;
+}
