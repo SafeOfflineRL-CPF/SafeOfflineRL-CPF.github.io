@@ -46,36 +46,36 @@
   (ii) a filtering rule that constructs a deployed policy by accepting or rejecting actions based on the estimator’s output (A), and 
   (iii) a posterior computation and calibration procedure that adjusts the estimator so that the resulting filtering rule satisfies the target safety constraint (B).
   Finally, we optionally fine-tune the cost estimator via back-propagation to further improve performance (C).
-  
-  <h2>Abstract</h2>
-  <p>
-    This paper proposes a method to provide probabilistic safety guarantees 
-    for offline reinforcement learning (RL) by limiting the probability of safety violation 
-    to a user-specified constraint threshold, i.e., a chance constraint. The proposed approach 
-    constructs a safety-filtered policy that accepts or rejects candidate actions based on a learned 
-    cost estimator. To ensure the resulting decisions satisfy the target safety constraint, we 
-    further calibrate the estimator via posterior computation using the offline dataset. 
-    The proposed method offers significant flexibility, allowing for dynamic adjustment of 
-    constraint thresholds during deployment without additional retraining. We empirically validate 
-    the proposed method on offline RL robot navigation tasks in the OSRL benchmark, demonstrating that 
-    it meets user-specified thresholds while achieving additional performance gains via end-to-end backpropagation.
-  </p>
 
+  <section class="section-block" id="abstract">
+    <h2 class="section-title">Abstract</h2>
+    <p>
+      This paper proposes a method to provide probabilistic safety guarantees 
+      for offline reinforcement learning (RL) by limiting the probability of safety violation 
+      to a user-specified constraint threshold, i.e., a chance constraint. The proposed approach 
+      constructs a safety-filtered policy that accepts or rejects candidate actions based on a learned 
+      cost estimator. To ensure the resulting decisions satisfy the target safety constraint, we 
+      further calibrate the estimator via posterior computation using the offline dataset. 
+      The proposed method offers significant flexibility, allowing for dynamic adjustment of 
+      constraint thresholds during deployment without additional retraining. We empirically validate 
+      the proposed method on offline RL robot navigation tasks in the OSRL benchmark, demonstrating that 
+      it meets user-specified thresholds while achieving additional performance gains via end-to-end backpropagation.
+    </p>
+  </section>
 
-
-
-  <h2>Video</h2>
-  <div class="video-container">
-    <iframe
-      src="https://www.youtube.com/embed/dWWlYhj9gck"
-      title="Project Video"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <section class="section-block" id="video">
+    <h2>Video</h2>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/dWWlYhj9gck"
+        title="Project Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
 </div>
-
 </body>
 </html>
