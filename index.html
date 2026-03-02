@@ -39,6 +39,14 @@
     </a> -->
   </div>
 
+  <img src="images/figure1_revised_v4.png" class="figure">
+  This figure illustrates the overall pipeline of our approach.
+  Our method consists of three components: 
+  (i) a cost estimator that predicts whether executing action is safe (A), 
+  (ii) a filtering rule that constructs a deployed policy by accepting or rejecting actions based on the estimator’s output (A), and 
+  (iii) a posterior computation and calibration procedure that adjusts the estimator so that the resulting filtering rule satisfies the target safety constraint (B).
+  Finally, we optionally fine-tune the cost estimator via back-propagation to further improve performance (C).
+  
   <h2>Abstract</h2>
   <p>
     This paper proposes a method to provide probabilistic safety guarantees 
@@ -53,14 +61,7 @@
     it meets user-specified thresholds while achieving additional performance gains via end-to-end backpropagation.
   </p>
 
-  <h2>Method Overview</h2>
-  <img src="images/figure1_revised_v4.png" class="figure">
-  This figure illustrates the overall pipeline of our approach.
-  Our method consists of three components: 
-  (i) a cost estimator that predicts whether executing action $\mathbf{a}$ at state $\mathbf{s}$ is safe (A), 
-  (ii) a filtering rule that constructs a deployed policy $\pi$ by accepting or rejecting actions based on the estimator’s output (A), and 
-  (iii) a posterior computation and calibration procedure that adjusts the estimator so that the resulting filtering rule satisfies the target safety constraint (B).
-  Finally, we optionally fine-tune the cost estimator via back-propagation to further improve performance (C).
+
 
 
   <h2>Video</h2>
