@@ -36,46 +36,73 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* =============== Links =============== */
+/* =============== Links / Buttons =============== */
 
 .links {
-  text-align: center;
-  margin-bottom: 50px;
-
   display: flex;
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
+  margin: 26px 0 56px;
 }
 
+/* 버튼 공통 */
 .links .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
 
   padding: 10px 16px;
   border-radius: 999px;
 
-  background: #111;
-  color: #fff;
-  text-decoration: none;
+  /* horwitz.ai 느낌: 다크 + 부드러운 그라데이션 */
+  background: linear-gradient(180deg, #151a23 0%, #0f141d 100%);
+  color: #ffffff;
 
+  text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
 
-  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  box-shadow:
+    0 10px 28px rgba(15, 20, 29, 0.22),
+    0 2px 8px rgba(15, 20, 29, 0.12);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease, border-color 0.15s ease;
 }
 
-.links .btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+/* 아이콘(이모지) 정렬 */
+.links .btn-icon {
+  font-size: 1.05rem;
+  line-height: 1;
   opacity: 0.95;
 }
 
+/* Hover: 살짝 떠오르고 더 또렷 */
+.links .btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 14px 36px rgba(15, 20, 29, 0.28),
+    0 4px 12px rgba(15, 20, 29, 0.14);
+  opacity: 0.98;
+}
+
+/* Active: 눌리는 느낌 */
 .links .btn:active {
   transform: translateY(0px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  box-shadow:
+    0 8px 22px rgba(15, 20, 29, 0.20),
+    0 2px 8px rgba(15, 20, 29, 0.10);
+}
+
+/* 키보드 접근성 */
+.links .btn:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.35),
+    0 12px 30px rgba(15, 20, 29, 0.24);
 }
 
 /* =============== Sections =============== */
