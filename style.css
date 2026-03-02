@@ -160,8 +160,8 @@ p {
 /* =============== Section Blocks (Abstract / Video) =============== */
 
 .section-block {
-  background: #f6f8fc;          /* 연한 배경 */
-  border: 1px solid #eef1f7;    /* 은은한 테두리 */
+  background: #f8fafc;          /* 연한 배경 */
+  border: 1px solid #e5e7eb;    /* 은은한 테두리 */
   border-radius: 16px;
   padding: 34px 28px;
   margin-top: 46px;
@@ -184,7 +184,7 @@ p {
   display: block;
   width: 54px;
   height: 3px;
-  background: #b05cff; /* 원하면 색 바꿔도 됨 */
+  background: #2563eb; /* 원하면 색 바꿔도 됨 */
   border-radius: 999px;
   margin: 12px auto 0;
 }
