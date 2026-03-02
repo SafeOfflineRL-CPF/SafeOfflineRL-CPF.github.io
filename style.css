@@ -41,23 +41,41 @@ h1 {
 .links {
   text-align: center;
   margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.links a {
-  display: inline-block;
-  margin: 0 14px;
-  padding: 6px 0;
-  font-weight: 500;
-  font-size: 1rem;
+.links .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+  border-radius: 999px;
+
+  background: #111;
+  color: #fff;
   text-decoration: none;
-  color: #222;
-  border-bottom: 2px solid transparent;
-  transition: all 0.25s ease;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
 }
 
-.links a:hover {
-  border-bottom: 2px solid #222;
-  opacity: 0.85;
+.links .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+  opacity: 0.95;
+}
+
+.links .btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
 /* =============== Sections =============== */
