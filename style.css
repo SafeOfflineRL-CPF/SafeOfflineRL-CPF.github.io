@@ -1,32 +1,41 @@
+/* =============== Global =============== */
+
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #ffffff;
-  color: #111;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background: #fff;
   line-height: 1.7;
-  font-size: 16px;
 }
 
+/* =============== Container =============== */
+
 .container {
-  max-width: 900px;
+  max-width: 920px;
   margin: 60px auto;
   padding: 0 24px;
 }
 
+/* =============== Typography =============== */
+
 h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
   text-align: center;
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  line-height: 1.15;
 }
 
 .authors {
   text-align: center;
-  font-size: 17px;
+  font-size: 1.1rem;
   font-weight: 400;
-  color: #555;
+  color: #444;
   margin-bottom: 30px;
 }
+
+/* =============== Links =============== */
 
 .links {
   text-align: center;
@@ -34,32 +43,44 @@ h1 {
 }
 
 .links a {
+  display: inline-block;
   margin: 0 14px;
-  text-decoration: none;
+  padding: 6px 0;
   font-weight: 500;
-  color: #000;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #222;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease;
 }
 
 .links a:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #222;
 }
+
+/* =============== Sections =============== */
 
 h2 {
-  margin-top: 50px;
-  font-size: 22px;
+  font-size: 1.85rem;
   font-weight: 600;
-  letter-spacing: -0.3px;
+  margin-top: 60px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
 }
 
+/* =============== Text =============== */
+
 p {
-  margin-top: 10px;
+  font-size: 1rem;
+  margin-top: 12px;
   color: #333;
 }
+
+/* =============== Images =============== */
 
 .figure {
   display: block;
   max-width: 100%;
-  margin: 30px auto;
+  margin: 36px auto;
 }
