@@ -39,13 +39,18 @@
     </a> -->
   </div>
 
-  <img src="images/figure1_revised_v4.png" class="figure">
-  This figure illustrates the overall pipeline of our approach.
-  Our method consists of three components: 
-  (i) a cost estimator that predicts whether executing action is safe (A), 
-  (ii) a filtering rule that constructs a deployed policy by accepting or rejecting actions based on the estimator’s output (A), and 
-  (iii) a posterior computation and calibration procedure that adjusts the estimator so that the resulting filtering rule satisfies the target safety constraint (B).
-  Finally, we optionally fine-tune the cost estimator via back-propagation to further improve performance (C).
+  <section class="section-block" id="video">
+    <h2 class="section-title">Video</h2>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/hbDSpuAaMog"
+        title="Project Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
   <section class="section-block" id="abstract">
     <h2 class="section-title">Abstract</h2>
@@ -62,19 +67,14 @@
       it meets user-specified thresholds while achieving additional performance gains via end-to-end backpropagation.
     </p>
   </section>
-
-  <section class="section-block" id="video">
-    <h2 class="section-title">Video</h2>
-    <div class="video-container">
-      <iframe
-        src="https://www.youtube.com/embed/TYasxUVznj4"
-        title="Project Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
+  
+  <img src="images/figure1_revised_v4.png" class="figure">
+  This figure illustrates the overall pipeline of our approach.
+  Our method consists of three components: 
+  (i) a cost estimator that predicts whether executing action is safe (A), 
+  (ii) a filtering rule that constructs a deployed policy by accepting or rejecting actions based on the estimator’s output (A), and 
+  (iii) a posterior computation and calibration procedure that adjusts the estimator so that the resulting filtering rule satisfies the target safety constraint (B).
+  Finally, we optionally fine-tune the cost estimator via back-propagation to further improve performance (C).
 
 </div>
 </body>
