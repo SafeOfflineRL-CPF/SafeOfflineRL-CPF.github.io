@@ -37,12 +37,12 @@ h1 {
 }
 
 .venue {
-  margin-top: 0.3rem;
-  margin-bottom: 1.6rem;
+  text-align: center;
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
   font-size: 1.05rem;
   font-weight: 500;
   color: #2563eb;
-  text-align: center;
 }
 
 /* =============== Links / Buttons =============== */
