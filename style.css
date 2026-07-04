@@ -1,3 +1,46 @@
+/* =============== Logo =============== */
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin-top: 72px;
+  padding: 28px 0 36px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.82;
+  filter: grayscale(10%);
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.lab-logo {
+  max-height: 40px;
+}
+
+.kaist-logo {
+  max-height: 36px;
+}
+
+@media (max-width: 600px) {
+  .footer-logos {
+    gap: 24px;
+    margin-top: 56px;
+    padding: 24px 0 32px;
+  }
+
+  .footer-logo {
+    height: 30px;
+  }
+}
+
 /* =============== Global =============== */
 
 body {
